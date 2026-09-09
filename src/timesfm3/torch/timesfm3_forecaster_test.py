@@ -230,7 +230,7 @@ class TimesFM3ForecasterTest(unittest.TestCase):
     np.testing.assert_array_equal(
       diagnostics.interval_width, np.array([4.0, 10.0])
     )
-    np.testing.assert_array_equal(
+    np.testing.assert_allclose(
       diagnostics.relative_interval_width, np.array([0.4, 1.0])
     )
     np.testing.assert_array_equal(
